@@ -1,2 +1,2 @@
 # dom-inspector-devtool
-仿chrome的devtool的东西
+模仿chrome的开发者工具，主要是模仿了元素选择部分

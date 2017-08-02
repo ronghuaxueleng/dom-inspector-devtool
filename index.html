@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>html信息抓取</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="qmenu_menu" class="p_pop blk" style="display: none;">
+        <div class="ptm pbw hm">
+            请 <a href="javascript:;" class="xi2" onclick="lsSubmit()"><strong>登录</strong></a> 后使用快捷导航
+            <br/>没有帐号？<a href="http://html5cn.org/member.php?mod=register" class="xi2 xw1">立即注册</a>
+        </div>
+    </div>
+    <div id="hd">
+        <div class="wp">
+            <div class="hdc cl">
+                <h2>
+                    <a href="http://www.html5cn.org/portal.php" title="HTML5中国"></a>
+                </h2>
+
+                <script src="static/js/logging.js?Ggq" type="text/javascript"></script>
+                <form method="post" autocomplete="off" id="lsform" action="member.php?mod=logging&amp;action=login&amp;loginsubmit=yes&amp;infloat=yes&amp;lssubmit=yes" onsubmit="return lsSubmit()">
+                    <div class="fastlg cl">
+                        <span id="return_ls" style="display:none"></span>
+
+                        <div class="y pns">
+                            <table cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td>
+                                        <label for="ls_username">帐号</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" name="username" id="ls_username" class="px vm xg1" value="UID/用户名/Email" onfocus="if(this.value == 'UID/用户名/Email'){this.value = '';this.className = 'px vm';}" onblur="if(this.value == ''){this.value = 'UID/用户名/Email';this.className = 'px vm xg1';}"
+                                            tabindex="901" />
+                                    </td>
+                                    <td class="fastlg_l">
+                                        <label for="ls_cookietime">
+                                        <input type="checkbox" name="cookietime" id="ls_cookietime" class="pc" value="2592000" tabindex="903"/>自动登录</label>
+                                    </td>
+                                    <td>&nbsp;<a href="javascript:;" onclick="showWindow('login', 'member.php?mod=logging&action=login&viewlostpw=1')">找回密码</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="ls_password">密码</label>
+                                    </td>
+                                    <td>
+                                        <input type="password" name="password" id="ls_password" class="px vm" autocomplete="off" tabindex="902" />
+                                    </td>
+                                    <td class="fastlg_l">
+                                        <button type="submit" class="pn vm" tabindex="904" style="width: 75px;"><em>登录</em>
+                                    </button>
+                                    </td>
+                                    <td>&nbsp;<a href="http://html5cn.org/member.php?mod=register" class="xi2 xw1">立即注册</a>
+                                    </td>
+                                </tr>
+                            </table>
+                            <input type="hidden" name="quickforward" value="yes" />
+                            <input type="hidden" name="handlekey" value="ls" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./dom-inspector.js"></script>
+</body>
+
+</html>
